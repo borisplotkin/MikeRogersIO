@@ -89,9 +89,7 @@ meta:
       <div class="since">Since 2010</div>
     </li>
   </ul>
-</div>
 
-<div class="container">
   <h2>Find me</h2>
   <p>I'm pretty easy to find online, here are a few of the networks I'm on:</p>
   <ul class="capabilities">
@@ -137,9 +135,18 @@ meta:
       <div class="name">Email me</div>
     </li>
   </ul>
-</div>
 
-<div class="container">
+  <div>
+    <h2>Projects</h2>
+    <ul class="post-list">
+      {% for portfolio in site.portfolios limit:5 %}
+        <li>
+          <a href="{{ portfolio.url | drop_index }}">{{ portfolio.title }}</a>
+          <p class="description">{{ portfolio.meta.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   <div>
     <h2>Recent posts</h2>
@@ -161,23 +168,6 @@ meta:
     <a href="/posts.html" class="btn">See all blog posts</a>
   </div>
 
-  {% if 1 == 0 %}
-
-  <div>
-    <h2>Recent projects</h2>
-    <ul class="post-list">
-      <li>
-        <a href="https://github.com/MikeRogers0/show-when-this">Show when this</a>
-        <div class="meta">jQuery plugin to manage conditional showing/hiding of elements.</div>
-      </li>
-      <li>
-        <a href="#">Sync2FA</a>
-        <div class="meta">A Ruby On Rails project</div>
-      </li>
-    </ul>
-  </div>
-
-  {% endif %}
 </div>
 
 <script type="text/javascript" async="async">

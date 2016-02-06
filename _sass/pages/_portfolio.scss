@@ -1,0 +1,22 @@
+.portfolio {
+  margin-top: 21px;
+
+  .lead {
+    font-weight: bold;
+  }
+}
+
+.key-details {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+}
