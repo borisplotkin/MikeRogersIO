@@ -9,27 +9,29 @@ meta:
   index: true
 ---
 
-{% img src: /uploads/portfolio/awesomeweb/homepage.png width: 1353 alt: "Screenshot of AwesomeWeb Febuary 2016" %}
+<div class="res-img">
+  <a href="https://www.awesomeweb.com/" target="_blank">
+    <img src="/uploads/portfolio/awesomeweb/homepage.png" style="max-width: 1280px;" alt="Screenshot of AwesomeWeb Febuary 2016">
+  </a>
+</div>
 
-<aside class="key-details">
-  <ul>
-    <li><a href="https://www.awesomeweb.com/" target="_blank">AwesomeWeb</a></li>
-    <li>Key Technologies: <br/>Ruby on Rails, WebSolr, Heroku, HTML5, SASS &amp; Capybara</li>
-  </ul>
-</aside>
+<h1>AwesomeWeb</h1>
 
-<section>
-  <p class="lead">AwesomeWeb a simple freelance marketplace to help clients find and hire designers and developers for their projects.</p>
-  <p>AwesomeWeb approach me in January 2015 to help build out new features &amp; improve current features.</p>
+<section class="project-details">
+  <p class="lead">AwesomeWeb is a simple freelance marketplace to help clients find and hire designers and developers for their projects.</p>
 
-  <h2>Moving Enviroment</h2>
-  <p>One of the key changes I made was moving from a single server enviroment to a PaaS enviroment. The main reasons behind this change was to allow for resouces to be focused on building out the application, and allow to allow easier scalability.</p>
-  <p>One of the tricky parts of the enviroment move was the assets, [I moved them to S3, make sure 301 redirects were in place from old URL]</p>
-  <p>We also moved our assets to be served via cloudfront which improved frontend performcne.</p>
+  <p>My main role at AwesomeWeb was to build out new ideas while maintaining current features in an agile way. It's mostly written in Ruby on Rails, but in this project I also worked with Bootstrap SASS &amp; jQuery.</p>
 
-  <h2>Improving consistency</h2>
-  <p>We used bootstrap on the site, but then we customised it and added a style guide</p>
+  <p><a href="https://www.awesomeweb.com/" target="_blank">www.awesomeweb.com</a></p>
 
-  <h2>Improving quality</h2>
-  <p>I used tools such as Codacy to monitor the quality of the code I was outputting and also loo</p>
+  <h2>Search</h2>
+  {% img src: /uploads/portfolio/awesomeweb/search.png width: 1280 alt: "The search page" %}
+
+  <p>A key piece of functionality I wrote was the search, this required Projects and Freelances to be filtered based on their relevance to the search query. To achieve this I used a mix of Apache Solr and Memcache.</p>
+
+  <h2>Landing Pages</h2>
+  {% img src: /uploads/portfolio/awesomeweb/signup-landing-page.png width: 1280 alt: "Signup landing page"%}
+
+  <p>I implemented the landing pages based upon designs provided by our designer. I then worked with the designer and project manager to really build a brilliant page that could drive sales.</p>
+
 </section>
